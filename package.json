@@ -1,0 +1,24 @@
+{
+  "name": "grunt-component-install",
+  "version": "0.1.0",
+  "description": "Install dependencies for multiple components",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "component": "~0.17.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/anthonyshort/grunt-component-install"
+  },
+  "keywords": [
+    "component",
+    "gruntplugin"
+  ],
+  "author": "Anthony Short"
+}
