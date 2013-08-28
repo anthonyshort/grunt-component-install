@@ -1,6 +1,6 @@
 var fs = require('fs');
 var spawn = require('win-fork');
-var fs = require('fs');
+var path = require('path');
 
 module.exports = function(grunt) {
   grunt.registerMultiTask('componentinstall', function(){
