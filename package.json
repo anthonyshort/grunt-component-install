@@ -1,13 +1,14 @@
 {
   "name": "grunt-component-install",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Install dependencies for multiple components",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
-    "component": "~0.17.0"
+    "component": "~0.17.0",
+    "win-fork": "~1.1.1"
   },
   "scripts": {
     "test": "grunt nodeunit"
