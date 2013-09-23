@@ -22,7 +22,6 @@ module.exports = function(grunt) {
       grunt.log.subhead(name);
 
       var child = spawn(bin, [
-        '--force',
         '--dev'
       ], {
         stdio: 'inherit',
