@@ -7,6 +7,7 @@ module.exports = function(grunt) {
 
     var options = this.options({
       dev: true,
+      force: false,
       remotes: []
     });
 
@@ -20,11 +21,11 @@ module.exports = function(grunt) {
       var bin = path.resolve(__dirname + '/../node_modules/component/bin/component-install');
       if(!fs.existsSync(name + '/component.json')) return next();
       grunt.log.subhead(name);
+      var args = [];
+      if (options.dev) args.push('--dev');
+      if (options.force) args.push('--force');
 
-      var child = spawn(bin, [
-        '--force',
-        '--dev'
-      ], {
+      var child = spawn(bin, args, {
         stdio: 'inherit',
         cwd: name
       });
