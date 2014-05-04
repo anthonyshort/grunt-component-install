@@ -7,7 +7,7 @@
     "test": "test"
   },
   "dependencies": {
-    "component": "~0.17.0",
+    "component": "0.19.9",
     "win-fork": "~1.1.1"
   },
   "scripts": {
