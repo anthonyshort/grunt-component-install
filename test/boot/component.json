@@ -1,0 +1,6 @@
+{
+  "name": "grunt-component-install-test",
+  "dependencies": {
+    "component/emitter": "*"
+  }
+}
